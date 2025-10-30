@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Users in Database</h1>
+
+    <ul>
+        {% for user in users %}
+            <li>{{ user[1] }} — {{ user[2] }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Add a new user</h2>
+    <form action="/add" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <button type="submit">Add User</button>
+    </form>
+</body>
+</html>
