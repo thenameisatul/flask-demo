@@ -16,8 +16,8 @@ CREATE TABLE IF NOT EXISTS users (
 ''')
 
 # Insert sample data
-cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', ('Atul', 'atul@example.com'))
-cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', ('John', 'john@example.com'))
+#cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', ('Atul', 'atul@example.com'))
+#cursor.execute('INSERT INTO users (name, email) VALUES (?, ?)', ('John', 'john@example.com'))
 
 # Save (commit) changes and close connection
 conn.commit()
